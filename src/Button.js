@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // using hooks:
 
-export default function Button() {
+const Button = () => {
   const [buttonText, setButtonText] = useState('Click me here');
 
   const handleClick = () => {
@@ -10,4 +10,6 @@ export default function Button() {
   };
 
   return <button onClick={handleClick}>{buttonText}</button>;
-}
+};
+
+export default Button;
